@@ -16,8 +16,8 @@ function FnDisableNumbers (f) { // go through buttons (numbers) and disable them
     for (let i = 9; i > 1; i--) document.getElementById('btn'+i).disabled = f;
 }
 
-function FnBin () { // switch to binary notation
-    if (!bin) {
+function FnBin () {
+    if (!bin) { // if in decimal switch to binary notation
         bin = true;
         document.getElementById('status').innerHTML = "BIN";
         // and if only a number given as input, convert to binary
@@ -47,6 +47,7 @@ function FnDecimalDot () {
 }
 
 function FnClear () {
+    m = 0;
     c++;
     clear = true;
     operation = '';
@@ -70,7 +71,10 @@ function FnEql () {
     number1 = input[0];
     number2 = input[1];
     if (operation == '') return null;
-    else document.getElementById('res').innerHTML = FnCalc(operation, number1, number2);
+    else {
+        document.getElementById('res').innerHTML = FnCalc(operation, number1, number2);
+        operation = '';
+    }
 }
 
 function FnNumber (i) {
