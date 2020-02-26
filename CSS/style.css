@@ -1,0 +1,43 @@
+body {
+    width: 33%;
+}
+
+#display {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+}
+
+#status {
+    display: inline-block;
+    margin-left: 0.2rem
+}
+
+#res {
+    font-size: 20px;
+    text-align: right;
+    margin-top: -0.4rem;
+    margin-left: 0.1rem;
+    padding: 0rem 0.5rem 0.25rem 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#btns button {
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left
+}
+
+#btnFn, #btnEql {
+    background-color: darkslategrey;
+    color: white;
+}
+
+#btnBin, #btnSum, #btnSub, #btnMul, #btnDiv {
+    background-color: lightslategray;
+    color: white
+}

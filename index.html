@@ -1,0 +1,48 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <script src="calculator.js" type="text/javascript"></script>
+
+        <div id="display">
+            <span id="status">DEC</span><p id="res"></p>
+        </div>
+        
+        <div id="btns">
+            <button id="btnFn" onclick="FnMathFunctions('sqrt')">&#8730;</button>
+            <button id="btnFn" onclick="FnMathFunctions('exp2')">x<sup>2</sup></button>
+            <button id="btnFn" onclick="FnMathFunctions('exp3')">x<sup>3</sup></button>
+            <button id="btnBin" onclick="FnBin()">BIN | DEC</button>
+
+            <button id="btnFn" onclick="FnMathFunctions('sum')">&#8721;</button>
+            <button id="btnFn" onclick="FnMathFunctions('fac')">x !</button>
+            <button id="btnFn" onclick="FnMathFunctions('overx')"><sup>1</sup>/ x</button>
+            <button id="btnSub" onclick="FnOperation('/')">/</button>
+
+            <button id="btn7" onclick="FnNumber(7)">7</button>
+            <button id="btn8" onclick="FnNumber(8)">8</button>
+            <button id="btn9" onclick="FnNumber(9)">9</button>
+            <button id="btnMul" onclick="FnOperation('*')">*</button>
+
+            <button id="btn4" onclick="FnNumber(4)">4</button>
+            <button id="btn5" onclick="FnNumber(5)">5</button>
+            <button id="btn6" onclick="FnNumber(6)">6</button>
+            <button id="btnDiv" onclick="FnOperation('-')">-</button>
+
+            <button id="btn" onclick="FnNumber(1)">1</button>
+            <button id="btn2" onclick="FnNumber(2)">2</button>
+            <button id="btn3" onclick="FnNumber(3)">3</button>
+            <button id="btnSum" onclick="FnOperation('+')">+</button>
+
+            <button id="btnN" onclick="FnNumber(0)">0</button>
+            <button id="btnDot" onclick="FnDecimalDot()">.</button>
+            <button id="btnClr" onclick="FnClear()">C</button>
+            <button id="btnEql" onclick="FnEql()">=</button>
+        </div>
+    </body>
+</html>
